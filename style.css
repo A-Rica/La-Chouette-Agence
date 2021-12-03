@@ -39,6 +39,36 @@ a:hover {
     position: relative;
 }
 
+.phrase-accroche{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 60%;
+    color: rgba(0, 0, 0, .5)
+}
+
+.phrase-realisation{
+    display: flex;
+    margin-left: 29%;
+    width: 45%;
+    color: rgba(0, 0, 0, .5)
+}
+
+.phrase-citation {
+    margin-left: 30%;
+    font-size: 13px
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.position-contact {
+    display: flex;
+    flex-direction: column;
+}
+
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -54,6 +84,14 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.color-texte{
+color: #615B5A
 }
 
 .bg-center,
@@ -91,7 +129,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -305,6 +343,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    margin-left: 55px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -316,8 +355,6 @@ a:hover {
 }
 
 .navbar .nav {
-    padding-top: 2px;
-    margin-right: -16px;
     float: right;
     z-index: 1;
 }
@@ -365,8 +402,8 @@ a:hover {
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
-        top: 50%;
-        right: 20px;
+        top: 46%;
+        right: 5.4%;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -647,15 +684,14 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
 
 .container {
-    max-width: 1000px;
+    width: 73%;
 }
 
 .hero-bloc-text {
@@ -702,8 +738,33 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    list-style-type: none;
 }
 
+.position-annuaire{
+    display: flex;
+    margin-left: 30%;
+}
+
+.partenaire{
+    margin-top: 40px;
+    margin-left: 40%;
+    
+}
+
+.partenaire a{
+    color: rgba(255, 255, 255, .6);
+}
+
+.partenaire a:hover{
+    text-decoration: underline;
+}
+
+.lien{
+    font-family: "helvetica";
+font-weight: 400;
+color: #575757 !important;
+}
 h2 {
     font-size: 22px;
     line-height: 1.4em;
@@ -717,9 +778,11 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    max-width: 850px;
+margin: auto auto auto 70px;
+box-shadow: 0px 0px 0px #000000;
+list-style-type: none;
+
 }
 
 h1 {
@@ -771,20 +834,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #935027;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FDB090!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #AF6249;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #A4684D!important;
     color: #FFFFFF!important;
 }
 
@@ -810,19 +873,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -840,6 +903,7 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    
     .navbar .nav {
         max-width: 80%
     }
@@ -890,6 +954,34 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .phrase-accroche{
+        margin-left: 10px;
+width: 90%;
+    }
+
+    footer {
+        position: absolute;
+        margin-top: 50%;
+        bottom: 0;
+    }
+    .position-annuaire{
+        margin-left: 25%;
+    }
+
+    .footer-annuaire-position{
+        margin-top: 75%;
+    }
+    .phrase-realisation{
+        margin-left: 10px;
+        width: 90%;
+    }
+    .phrase-citation {
+        margin-left: 15%;
+    }
+    .med-width-whitespace {
+        margin: auto auto auto -50px;
+        max-width: 470px;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -964,6 +1056,7 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+        margin-left: 0;
     }
     .nav-invert .navbar-header {
         float: none;
